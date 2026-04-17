@@ -3404,6 +3404,13 @@ hr.border-2 {
     margin-bottom: 30px;
     line-height: 1;
     border: 1px solid #f1eeeb;
+    text-align: center;
+}
+
+.facilties .single-facility > img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .facilties .single-facility h5 {
