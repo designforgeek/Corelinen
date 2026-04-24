@@ -8188,12 +8188,180 @@ input[type="submit"],
     line-height: 1.35;
 }
 
+.bath-detail-section {
+    padding-top: 56px;
+    background: #fbf8f3;
+}
+
+.bath-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 28px;
+}
+
+.bath-detail-card {
+    min-height: 100%;
+    padding: 22px 28px 20px;
+    border: 2px solid #e4dbcf;
+    background: #ffffff;
+}
+
+.bath-detail-card-dashed {
+    background: #f6f1e9;
+    border: 1.5px dashed rgba(174, 152, 129, 0.8);
+}
+
+.bath-detail-card-filled {
+    background: #f4efe7;
+    border-color: #f4efe7;
+}
+
+.bath-detail-title {
+    margin-bottom: 16px;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 2.3vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.02em;
+}
+
+.bath-detail-title span {
+    font-size: 0.82em;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.bath-detail-title-soft {
+    color: #a59688;
+}
+
+.bath-detail-title-accent {
+    color: #c5a15e;
+}
+
+.bath-promises-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px 16px;
+}
+
+.bath-promise-item {
+    text-align: center;
+}
+
+.bath-promise-icon {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    margin: 0 auto 8px;
+    display: block;
+}
+
+.bath-promise-value {
+    color: #c5a15e;
+    font-family: var(--font-display);
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.05;
+}
+
+.bath-promise-label {
+    margin-top: 3px;
+    color: #2f2b28;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    line-height: 1.12;
+}
+
+.bath-detail-list {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.bath-detail-list li {
+    margin-bottom: 8px;
+    color: #2e2b28;
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    line-height: 1.24;
+}
+
+.bath-detail-list li:last-child {
+    margin-bottom: 0;
+}
+
+.bath-size-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.bath-size-head,
+.bath-size-row {
+    display: grid;
+    grid-template-columns: 1.3fr 0.8fr;
+    column-gap: 14px;
+}
+
+.bath-size-head {
+    padding-bottom: 8px;
+    border-bottom: 1.5px dashed rgba(174, 152, 129, 0.65);
+}
+
+.bath-size-head span {
+    color: #c5a15e;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.bath-size-row {
+    padding-top: 10px;
+}
+
+.bath-size-row span {
+    color: #33302c;
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    line-height: 1.12;
+}
+
+.bath-size-note,
+.bath-size-support {
+    margin: 10px 0 0;
+    color: #2f4664;
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.18;
+}
+
+.bath-size-support {
+    margin-top: 14px;
+}
+
+.bath-oeko-strip {
+    max-width: 910px;
+    margin: 24px auto 0;
+    justify-content: center;
+}
+
 @media screen and (max-width: 991px) {
 
+    .bath-detail-grid,
     .product-feature-grid,
     .product-spec-grid,
     .product-detail-grid {
         grid-template-columns: 1fr;
+    }
+
+    .bath-promises-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .bath-size-grid {
+        gap: 18px;
     }
 
     .filled-showcase {
@@ -8281,6 +8449,41 @@ input[type="submit"],
 }
 
 @media screen and (max-width: 767px) {
+    .bath-detail-card {
+        padding: 20px 18px 18px;
+    }
+
+    .bath-detail-title {
+        font-size: 1.8rem;
+    }
+
+    .bath-promises-grid,
+    .bath-size-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bath-promise-value {
+        font-size: 1.25rem;
+    }
+
+    .bath-promise-label,
+    .bath-detail-list li,
+    .bath-size-head span,
+    .bath-size-row span,
+    .bath-size-note,
+    .bath-size-support {
+        font-size: 1rem;
+    }
+
+    .bath-size-head,
+    .bath-size-row {
+        grid-template-columns: 1fr 0.9fr;
+    }
+
+    .bath-oeko-strip {
+        margin-top: 20px;
+    }
+
     .filled-showcase {
         grid-template-columns: 1fr;
         gap: 20px;
