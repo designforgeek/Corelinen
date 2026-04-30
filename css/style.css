@@ -994,7 +994,7 @@ blockquote cite:before {
     color: var(--color-accent);
     text-transform: uppercase;
     position: relative;
-    letter-spacing: 6px;
+    letter-spacing: 3px;
     margin-bottom: 5px;
 }
 
@@ -3408,8 +3408,8 @@ hr.border-2 {
 }
 
 .facilties .single-facility > img {
-    width: 60px;
-    height: auto;
+    width: auto;
+    height: 60px;
     margin-bottom: 20px;
 }
 
@@ -6518,7 +6518,7 @@ select {
 }
 
 .about-brochure-image-wrap .about-founder-img {
-    min-height: 352px;
+    min-height: 452px;
     border: 0;
     box-shadow: none;
     filter: saturate(0.88) brightness(1.02);
@@ -6554,14 +6554,15 @@ select {
 
 .core-sets-heading {
     margin-bottom: 24px;
-    font-size: clamp(2.5rem, 4vw, 4.05rem);
+    font-size: clamp(2rem, 3vw, 3.05rem);
+    font-weight: 500;
     line-height: 1.04;
     color: #aa9a8b;
 }
 
 .core-sets-badge {
-    width: 148px;
-    height: 148px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto 26px;
     display: flex;
     flex-direction: column;
@@ -6572,7 +6573,7 @@ select {
     border: 4px solid #ffffff;
     color: #ffffff;
     font-family: var(--font-display);
-    font-size: 1.85rem;
+    font-size: 2.85rem;
     font-weight: 600;
     line-height: 1.05;
     letter-spacing: 0.06em;
@@ -6770,7 +6771,7 @@ select {
 }
 
 .core-sets-icon img {
-    width: 42px;
+    /* width: 42px; */
     max-width: 100%;
     height: auto;
     display: block;
@@ -7088,7 +7089,7 @@ select {
 .story-page h3,
 .story-text-huge,
 .story-text-large {
-    color: var(--color-heading);
+    color: var(--color-text-secondary);
 }
 
 .section-subtitle,
