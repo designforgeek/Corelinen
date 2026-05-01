@@ -3407,7 +3407,7 @@ hr.border-2 {
     text-align: center;
 }
 
-.facilties .single-facility > img {
+.facilties .single-facility>img {
     width: auto;
     height: 60px;
     margin-bottom: 20px;
@@ -6735,7 +6735,7 @@ select {
     color: #5c544d;
 }
 
-.core-sets-card-list li + li {
+.core-sets-card-list li+li {
     margin-top: 2px;
 }
 
@@ -8442,8 +8442,8 @@ input[type="submit"],
 }
 
 .promise-icon-wrap img {
-    width: 44px;
-    height: 44px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     opacity: 0.78;
     filter: saturate(0.35);
