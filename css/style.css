@@ -482,7 +482,7 @@ blockquote cite:before {
 }
 
 .bg-img {
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -2291,6 +2291,8 @@ hr {
 /* ======= Page Banner Header style ======= */
 .banner-header {
     height: 60vh;
+    position: relative;
+    overflow: hidden;
 }
 
 .banner-header.full-height {

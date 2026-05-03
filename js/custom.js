@@ -56,9 +56,9 @@ $(function () {
             logo.attr('src', 'img/core_logo.png');
         } else {
             navbar.removeClass("nav-scroll");
-            logo.attr('src', 'img/core_logo.png');
+            logo.attr('src', 'img/white logo-04.png');
         }
-    });
+    }).trigger("scroll");
     
     
     // Close navbar-collapse when a  clicked
