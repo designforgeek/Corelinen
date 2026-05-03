@@ -8681,7 +8681,8 @@ input[type="submit"],
     }
 
     .product-detail-title {
-        font-size: 24px;
+        font-size: 36px;
+        line-height: 42px;
     }
 
     .product-detail-copy,
