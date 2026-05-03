@@ -8283,9 +8283,10 @@ input[type="submit"],
 .oeko-strip {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 18px;
     margin-top: 34px;
-    padding: 12px 22px;
+    padding: 2px;
     border: 1px dashed rgba(169, 140, 94, 0.65);
     background: #fbf7f0;
 }
@@ -8296,7 +8297,7 @@ input[type="submit"],
 
 .oeko-strip-badge img {
     display: block;
-    width: 74px;
+    width: 40px;
     height: auto;
 }
 
