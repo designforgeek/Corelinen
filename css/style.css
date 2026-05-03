@@ -482,7 +482,7 @@ blockquote cite:before {
 }
 
 .bg-img {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -8991,5 +8991,24 @@ input[type="submit"],
 
     .keyword-strip-text {
         text-align: center;
+    }
+}
+
+/* Mobile Banner Fixes */
+@media screen and (max-width: 767px) {
+    .banner-header {
+        height: 70vh !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-attachment: scroll !important;
+    }
+
+    .bg-img {
+        background-size: cover !important;
+        background-position: bottom center !important;
+    }
+
+    .bg-fixed {
+        background-attachment: scroll !important;
     }
 }
