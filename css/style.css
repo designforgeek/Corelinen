@@ -8864,7 +8864,7 @@ input[type="submit"],
 .res-item-circle {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 1px;
     margin-bottom: 10px;
 }
 
