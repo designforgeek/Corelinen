@@ -994,8 +994,8 @@ blockquote cite:before {
     color: var(--color-accent);
     text-transform: uppercase;
     position: relative;
-    letter-spacing: 3px;
-    margin-bottom: 5px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
 }
 
 .section-subtitle span {
@@ -8732,7 +8732,7 @@ input[type="submit"],
     .facilties .single-facility {
         padding: 10px;
         margin-bottom: 0px;
-        min-height: 200px;
+        min-height: 160px;
         display: flex;
         flex-direction: column;
         justify-content: center;
