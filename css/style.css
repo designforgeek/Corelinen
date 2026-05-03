@@ -2295,7 +2295,7 @@ hr {
 
 /* ======= Page Banner Header style ======= */
 .banner-header {
-    height: 60vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -9037,7 +9037,7 @@ input[type="submit"],
 /* Mobile Banner Fixes */
 @media screen and (max-width: 767px) {
     .banner-header {
-        height: 70vh !important;
+        height: 80vh !important;
         background-size: cover !important;
         background-position: center center !important;
         background-attachment: scroll !important;
