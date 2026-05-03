@@ -7344,6 +7344,10 @@ input[type="submit"],
 }
 
 @media screen and (max-width: 767px) {
+    .header {
+        min-height: 60vh;
+    }
+
     .core-sets-section {
         padding: 68px 0 64px;
     }
@@ -7439,9 +7443,9 @@ input[type="submit"],
         font-size: 0.8rem;
     }
 
-    .about-brochure {
+    /* .about-brochure {
         padding-top: 95px;
-    }
+    } */
 
     .about-brochure-header {
         margin-bottom: 26px;
