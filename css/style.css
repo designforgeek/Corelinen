@@ -1003,7 +1003,7 @@ blockquote cite:before {
 }
 
 .section-title {
-    font-size: 46px;
+    font-size: 39px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     color: var(--color-heading);
