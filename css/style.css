@@ -8005,12 +8005,12 @@ input[type="submit"],
 
 .product-detail-title {
     margin-bottom: 18px;
-    color: var(--color-heading);
+    color: #a59688;
     font-family: var(--font-display);
-    font-size: 30px;
+    font-size: 48px;
     font-weight: 600;
-    letter-spacing: 0.03em;
-    line-height: 1.05;
+    /* letter-spacing: 0.03em;
+    line-height: 1.05; */
 }
 
 .product-detail-title span {
@@ -8020,10 +8020,11 @@ input[type="submit"],
 }
 
 .product-detail-copy {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     color: var(--color-text-primary);
     font-family: var(--font-display);
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.3;
 }
 
