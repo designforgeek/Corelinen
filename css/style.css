@@ -482,7 +482,7 @@ blockquote cite:before {
 }
 
 .bg-img {
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -1588,7 +1588,8 @@ hr {
     height: 100%;
     width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
+    /* Focus on top/center for hotel bed shots */
 }
 
 .slider-fade .item .caption {
@@ -1633,8 +1634,37 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+    .slider-fade .owl-item {
+        height: 80vh;
+        /* Better than 100vh on mobile to prevent address bar jumping */
+        min-height: 500px;
+    }
+
+    .slider-fade .item {
+        background-position: center center;
+    }
+
     .slider-fade .owl-nav {
         display: none;
+    }
+
+    .header .caption h1 {
+        font-size: 32px;
+        letter-spacing: 5px;
+    }
+
+    .header .caption h2 {
+        font-size: 26px;
+    }
+
+    .header .caption h3 {
+        font-size: 34px;
+        letter-spacing: 3px;
+    }
+
+    .header .caption h4 {
+        font-size: 13px;
+        letter-spacing: 4px;
     }
 }
 
@@ -2261,7 +2291,7 @@ hr {
 
 .banner-header.full-height {
     min-height: 100vh;
-    background-position: center;
+    background-position: bottom;
 }
 
 .banner-header.full-height h4 {
@@ -4215,11 +4245,12 @@ button.mfp-arrow {
     }
 
     .home-page .header .caption h1 {
-        letter-spacing: 6px;
+        letter-spacing: 3px;
     }
 
     .home-page .header .caption .hero-slide-title {
-        letter-spacing: 6px;
+        letter-spacing: 1px;
+        font-size: 25px;
     }
 }
 
@@ -6687,11 +6718,16 @@ select {
     position: absolute;
     top: 10px;
     bottom: 10px;
-    right: -22px;
-    width: 28px;
+    right: -14px; /* Slightly reduced for better default visibility */
+    width: 24px;
     border-radius: 0 14px 14px 0;
     background: var(--set-color);
-    z-index: -1;
+    z-index: 1; /* Move to front so it's visible without hover */
+    transition: right 0.3s ease;
+}
+
+.core-sets-card:hover .core-sets-card-panel::after {
+    right: -20px; /* Slight movement on hover to keep some interactivity */
 }
 
 .core-sets-card-body {

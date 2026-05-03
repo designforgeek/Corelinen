@@ -70,8 +70,13 @@ $(function () {
     // Sections background image from data background
     var pageSection = $(".bg-img, section");
     pageSection.each(function (indx) {
-        if ($(this).attr("data-background")) {
-            $(this).css("background-image", "url(" + $(this).data("background") + ")");
+        var background = $(this).attr("data-background");
+        var backgroundMobile = $(this).attr("data-background-mobile");
+
+        if (window.innerWidth < 768 && backgroundMobile) {
+            $(this).css("background-image", "url(" + backgroundMobile + ")");
+        } else if (background) {
+            $(this).css("background-image", "url(" + background + ")");
         }
     });
 
