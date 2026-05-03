@@ -8110,7 +8110,8 @@ input[type="submit"],
 
 .product-detail-inline-list-tight {
     gap: 2px 18px;
-    margin-top: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .fabric-weaves-grid {
@@ -8732,6 +8733,7 @@ input[type="submit"],
     }
 
     @media screen and (max-width: 400px) {
+
         .size-table-head,
         .size-table-row,
         .size-table-subhead,
