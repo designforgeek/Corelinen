@@ -486,6 +486,11 @@ blockquote cite:before {
     background-repeat: no-repeat;
 }
 
+.bg-img1 {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .bg-fixed {
     background-attachment: fixed;
 }
@@ -3774,7 +3779,7 @@ hr {
     color: #aa8453;
 }
 
-.restaurant-menu .bg-img .owl-theme .owl-nav [class*=owl-] {
+.restaurant-menu .bg-img .bg-img1 .owl-theme .owl-nav [class*=owl-] {
     color: #fff;
 }
 
@@ -8854,6 +8859,25 @@ input[type="submit"],
     margin-bottom: 15px;
 }
 
+.res-item-circle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.res-item-circle .icon-circle {
+    flex: 0 0 34px;
+    height: 34px;
+    border: 2px solid rgba(201, 169, 106, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent);
+    font-size: 14px;
+}
+
 .contact-item-circle .icon-circle {
     flex: 0 0 42px;
     height: 42px;
@@ -9012,6 +9036,10 @@ input[type="submit"],
     .bg-img {
         background-size: cover !important;
         background-position: bottom center !important;
+    }
+
+    .bg-img1 {
+        background-size: cover !important;
     }
 
     .bg-fixed {
