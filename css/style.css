@@ -8768,6 +8768,10 @@ input[type="submit"],
         transform: translateX(-50%);
         bottom: 10px;
     }
+
+    .reservations .text a {
+        font-size: 17px;
+    }
 }
 
 /* New Footer Styles */
