@@ -100,7 +100,7 @@
 
 :root {
     --font-body: 'Acumin Variable Concept', Arial, sans-serif;
-    --font-display: 'Josefin Sans', 'Acumin Variable Concept', Arial, sans-serif;
+    --font-display: 'Josefin Sans', Arial, sans-serif;
     --color-bg-sand: #ece3d6;
     --color-bg-cream: #fbf8f3;
     --color-surface-cream: #f2ece4;
@@ -6614,14 +6614,14 @@ select {
 
 .core-sets-kicker {
     margin-bottom: 16px;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1.45;
     color: #4f463f;
 }
 
 .core-sets-heading {
     margin-bottom: 24px;
-    font-size: clamp(2.5rem, 3vw, 2.05rem);
+    font-size: clamp(1.4rem, 1.9vw, 2rem);
     font-weight: 500;
     line-height: 1.04;
     color: #aa9a8b;
@@ -6653,6 +6653,7 @@ select {
     font-family: var(--font-display);
     font-size: 2rem;
     line-height: 1.12;
+    font-weight: 600;
     color: #9f9082;
 }
 
