@@ -6580,7 +6580,7 @@ select {
 }
 
 .about-brochure-image-wrap .about-founder-img {
-    min-height: 452px;
+    min-height: 385px;
     border: 0;
     box-shadow: none;
     filter: saturate(0.88) brightness(1.02);
