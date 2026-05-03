@@ -6614,14 +6614,14 @@ select {
 
 .core-sets-kicker {
     margin-bottom: 16px;
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.45;
     color: #4f463f;
 }
 
 .core-sets-heading {
     margin-bottom: 24px;
-    font-size: clamp(2rem, 3vw, 3.05rem);
+    font-size: clamp(2.5rem, 3vw, 2.05rem);
     font-weight: 500;
     line-height: 1.04;
     color: #aa9a8b;
