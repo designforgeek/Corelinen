@@ -1664,7 +1664,7 @@ hr {
 
     .header .caption h4 {
         font-size: 13px;
-        letter-spacing: 4px;
+        letter-spacing: 2px;
     }
 }
 
@@ -6556,7 +6556,7 @@ select {
 }
 
 .core-sets-section {
-    padding: 96px 0 88px;
+    padding: 88px 0 88px;
     background: #f3eee7;
 }
 
@@ -6718,16 +6718,19 @@ select {
     position: absolute;
     top: 10px;
     bottom: 10px;
-    right: -14px; /* Slightly reduced for better default visibility */
+    right: -14px;
+    /* Slightly reduced for better default visibility */
     width: 24px;
     border-radius: 0 14px 14px 0;
     background: var(--set-color);
-    z-index: 1; /* Move to front so it's visible without hover */
+    z-index: 1;
+    /* Move to front so it's visible without hover */
     transition: right 0.3s ease;
 }
 
 .core-sets-card:hover .core-sets-card-panel::after {
-    right: -20px; /* Slight movement on hover to keep some interactivity */
+    right: -20px;
+    /* Slight movement on hover to keep some interactivity */
 }
 
 .core-sets-card-body {
@@ -6840,8 +6843,8 @@ select {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 14px 18px;
-    padding-top: 26px;
+    /* gap: 30px 24px;  */
+    padding-top: 36px;
 }
 
 .core-sets-finish-items::before {
@@ -6854,21 +6857,48 @@ select {
 }
 
 .core-sets-finish-item {
-    width: 94px;
-    height: 94px;
-    padding: 14px;
+    flex: 0 0 calc(14.28% - 24px);
+    /* 7 items across */
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.core-sets-finish-icon-box {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 14px;
     border-radius: 50%;
-    border: 3px solid #ffffff;
-    background: #aa9a8b;
-    box-shadow: 0 8px 16px rgba(88, 71, 53, 0.08);
+    background: #a49384;
+    border: 4px solid #ffffff;
+    box-shadow: 0 10px 20px rgba(88, 71, 53, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.core-sets-finish-item:hover .core-sets-finish-icon-box {
+    transform: translateY(-5px);
+}
+
+.core-sets-finish-icon-box img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    /* Make SVGs white if they are dark */
+}
+
+.core-sets-finish-label {
+    margin: 0;
     font-family: var(--font-display);
-    font-size: 0.92rem;
-    line-height: 1.17;
-    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #4f463f;
 }
 
 .story-page {
@@ -7289,8 +7319,12 @@ input[type="submit"],
         font-size: 1.55rem;
     }
 
+    .core-sets-card-panel::after {
+        width: 20px;
+    }
+
     .core-sets-card {
-        padding-left: 52px;
+        padding-left: 42px;
     }
 
     .core-sets-cards::before {
@@ -7299,9 +7333,9 @@ input[type="submit"],
 
     .core-sets-card-number {
         left: 22px;
-        width: 54px;
-        height: 54px;
-        font-size: 1.4rem;
+        width: 30px;
+        height: 30px;
+        font-size: 0.6rem;
     }
 
     .core-sets-card::before {
@@ -7311,7 +7345,7 @@ input[type="submit"],
     .core-sets-card-panel {
         grid-template-columns: minmax(0, 1fr) 64px;
         gap: 12px;
-        padding: 14px 16px 14px 26px;
+        padding: 14px 14px 14px 14px;
         border-radius: 18px;
     }
 
@@ -7322,14 +7356,14 @@ input[type="submit"],
     }
 
     .core-sets-card-title {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .core-sets-card-tagline,
     .core-sets-card-list li,
     .core-sets-support-copy,
     .core-sets-support-note {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
 
     .core-sets-finish-title {
@@ -7337,14 +7371,28 @@ input[type="submit"],
     }
 
     .core-sets-finish-items {
-        gap: 12px;
+        gap: 20px 14px;
     }
 
     .core-sets-finish-item {
-        width: 84px;
-        height: 84px;
-        padding: 12px;
-        font-size: 0.82rem;
+        flex: 0 0 calc(33.33% - 14px);
+        /* 3 items across on mobile */
+        min-width: 0;
+    }
+
+    .core-sets-finish-icon-box {
+        width: 68px;
+        height: 68px;
+        margin-bottom: 10px;
+    }
+
+    .core-sets-finish-icon-box img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .core-sets-finish-label {
+        font-size: 0.8rem;
     }
 
     .about-brochure {
