@@ -4349,6 +4349,8 @@ button.mfp-arrow {
 .home-consultation-list i {
     color: var(--color-accent);
     margin-top: 4px;
+    font-size: 21px;
+    font-weight: 800;
 }
 
 .home-consultation-card {
@@ -8874,7 +8876,7 @@ input[type="submit"],
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-accent);
+    color: var(--color-accent-deep);
     font-size: 14px;
 }
 
