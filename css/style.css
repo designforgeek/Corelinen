@@ -8001,6 +8001,7 @@ input[type="submit"],
 
 .product-detail-card {
     min-height: 100%;
+    min-width: 0;
     padding: 30px 28px 26px;
 }
 
@@ -8012,6 +8013,19 @@ input[type="submit"],
 .product-detail-card-outline {
     background: #fff;
     border: 2px solid rgba(217, 205, 188, 0.75);
+}
+.product-detail-title-main{
+      margin-bottom: 18px;
+    color: #a59688;
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.product-detail-title-main span {
+    font-size: 0.85em;
+    letter-spacing: 0;
+    text-transform: none;
 }
 
 .product-detail-title {
@@ -8147,6 +8161,13 @@ input[type="submit"],
     display: grid;
     grid-template-columns: 1.25fr 1fr 1fr;
     column-gap: 18px;
+}
+
+.size-table-head span,
+.size-table-row span,
+.size-table-subhead span,
+.size-table-meta span {
+    min-width: 0;
 }
 
 .size-table-head {
@@ -8692,15 +8713,14 @@ input[type="submit"],
         padding: 24px 20px 22px;
     }
 
-    @media screen and (max-width: 480px) {
-        .product-detail-card {
-            padding: 20px 15px 18px;
-        }
+    .product-detail-title-main {
+        font-size: 36px;
+        line-height: 42px;
     }
 
     .product-detail-title {
-        font-size: 36px;
-        line-height: 42px;
+        font-size: 26px;
+        line-height: 32px;
     }
 
     .product-detail-copy,
@@ -8716,36 +8736,31 @@ input[type="submit"],
     }
 
     .size-table {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        margin: 0 -20px;
-        padding: 0 20px;
+        margin-top: 8px;
+        overflow-x: visible;
     }
 
     .size-table-head,
     .size-table-row,
     .size-table-subhead,
     .size-table-meta {
-        grid-template-columns: 140px 100px 100px;
-        column-gap: 15px;
-        width: max-content;
-        min-width: 100%;
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr) minmax(0, 0.9fr);
+        column-gap: 12px;
+        width: 100%;
+        min-width: 0;
     }
 
-    @media screen and (max-width: 400px) {
-
-        .size-table-head,
-        .size-table-row,
-        .size-table-subhead,
-        .size-table-meta {
-            grid-template-columns: 120px 85px 85px;
-            column-gap: 10px;
-        }
+    .size-table-head span,
+    .size-table-row span,
+    .size-table-subhead span,
+    .size-table-meta span {
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 
     .size-table-2-cols .size-table-head,
     .size-table-2-cols .size-table-row {
-        grid-template-columns: 140px 1fr;
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
         width: 100%;
         min-width: 0;
     }
@@ -8819,6 +8834,34 @@ input[type="submit"],
 
     .reservations .text a {
         font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-detail-card {
+        padding: 20px 15px 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .size-table-head,
+    .size-table-row,
+    .size-table-subhead,
+    .size-table-meta {
+        column-gap: 10px;
+    }
+
+    .product-detail-copy,
+    .product-detail-list li,
+    .product-detail-inline-list li,
+    .fabric-weaves-grid span,
+    .size-table-head,
+    .size-table-row,
+    .size-table-subhead,
+    .size-table-support,
+    .size-table-meta,
+    .size-table-note {
+        font-size: 14px;
     }
 }
 
