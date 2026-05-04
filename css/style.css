@@ -482,7 +482,7 @@ blockquote cite:before {
 }
 
 .bg-img {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -8770,17 +8770,18 @@ input[type="submit"],
     }
 
     .oeko-strip {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 16px 18px;
+        flex-direction: row;
+        gap: 2px;
+        align-items: center;
+        padding: 5px;
     }
 
     .oeko-strip-badge img {
-        width: 66px;
+        width: 30px;
     }
 
     .oeko-strip-text {
-        font-size: 15px;
+        font-size: 8px;
     }
 
     .facilties .single-facility {
