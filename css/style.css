@@ -6304,10 +6304,12 @@ select {
     transform: translateY(0);
 }
 
-.progress-wrap::after {
+.progress-wrap svg path {
+    fill: none;
+}
+
+.progress-wrap i {
     position: absolute;
-    font-family: 'themify';
-    content: '\e648';
     text-align: center;
     line-height: 45px;
     font-size: 12px;
@@ -6325,8 +6327,8 @@ select {
     transition: all 400ms linear;
 }
 
-.progress-wrap svg path {
-    fill: none;
+.progress-wrap i {
+    color: var(--color-accent);
 }
 
 .progress-wrap svg.progress-circle path {
@@ -8014,8 +8016,9 @@ input[type="submit"],
     background: #fff;
     border: 2px solid rgba(217, 205, 188, 0.75);
 }
-.product-detail-title-main{
-      margin-bottom: 18px;
+
+.product-detail-title-main {
+    margin-bottom: 18px;
     color: #a59688;
     font-family: var(--font-display);
     font-size: 48px;
@@ -8844,6 +8847,7 @@ input[type="submit"],
 }
 
 @media screen and (max-width: 400px) {
+
     .size-table-head,
     .size-table-row,
     .size-table-subhead,
@@ -9182,6 +9186,6 @@ input[type="submit"],
     object-fit: cover;
 }
 
-.policy-links{
+.policy-links {
     color: #ffffff;
 }
