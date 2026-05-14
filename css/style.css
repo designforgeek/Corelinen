@@ -110,7 +110,7 @@
     --color-accent: #c7a45d;
     --color-accent-deep: #af8c4f;
     --color-border-soft: #ddd4c8;
-    --color-surface-dark: #26231f;
+    --color-surface-dark: #333333;
     --color-surface-dark-2: #1f1c19;
     --color-set-blue: #6f89a6;
     --color-set-green: #7d9861;
@@ -181,6 +181,7 @@ p {
     line-height: 1.75em;
     color: var(--color-text-primary);
     margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
 h1,
@@ -3071,7 +3072,7 @@ hr.border-2 {
 .reservations .text a {
     font-size: 20px;
     color: #8e6d45;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
 }
 
 .reservations .text a.color-1 {
@@ -5615,7 +5616,7 @@ button.mfp-arrow {
 /* ======= Contact style ======= */
 .contact h3 {
     font-size: 24px;
-    color: #222;
+    color: #9D8E81;
 }
 
 .map {
