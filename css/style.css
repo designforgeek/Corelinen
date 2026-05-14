@@ -1002,6 +1002,7 @@ blockquote cite:before {
     position: relative;
     letter-spacing: 2px;
     margin-bottom: 15px;
+    margin-left:5px;
 }
 
 .section-subtitle span {
@@ -6626,7 +6627,7 @@ select {
     margin-bottom: 16px;
     font-size: 1.5rem;
     line-height: 1.45;
-    color: #4f463f;
+    color: #5c544d;
 }
 
 .core-sets-heading {
@@ -6891,7 +6892,7 @@ select {
     justify-content: center;
     flex-wrap: wrap;
     /* gap: 30px 24px;  */
-    padding-top: 36px;
+    padding-top: 17px;
 }
 
 .core-sets-finish-items::before {
