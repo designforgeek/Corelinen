@@ -9237,7 +9237,7 @@ input[type="submit"],
     align-items: start;
 }
 
-.core-strengths-grid::before {
+/* .core-strengths-grid::before {
     content: "";
     position: absolute;
     top: 58px;
@@ -9245,7 +9245,7 @@ input[type="submit"],
     right: 0;
     height: 28px;
     background: rgba(232, 223, 212, 0.66);
-}
+} */
 
 .core-strength-card {
     position: relative;
@@ -9269,8 +9269,8 @@ input[type="submit"],
 }
 
 .core-strength-icon img {
-    width: 48px;
-    height: 48px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
 }
 
@@ -9286,13 +9286,13 @@ input[type="submit"],
 
 @media screen and (max-width: 1199px) {
     .core-strengths-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 28px 18px;
     }
 
-    .core-strengths-grid::before {
+    /* .core-strengths-grid::before {
         display: none;
-    }
+    } */
 }
 
 @media screen and (max-width: 767px) {
