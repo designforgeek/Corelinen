@@ -9269,8 +9269,8 @@ input[type="submit"],
 }
 
 .core-strength-icon img {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
 }
 
@@ -9322,8 +9322,8 @@ input[type="submit"],
     }
 
     .core-strength-icon img {
-        width: 42px;
-        height: 42px;
+        width: 52px;
+        height: 52px;
     }
 
     .core-strength-card p {
