@@ -9208,3 +9208,131 @@ input[type="submit"],
 .policy-links {
     color: #ffffff;
 }
+
+/* Core Strengths */
+.core-strengths-section {
+    padding: 54px 0 54px;
+    background: #f8f4ee;
+}
+
+.core-strengths-head {
+    margin-bottom: 34px;
+    text-align: center;
+}
+
+.core-strengths-head h2 {
+    margin-bottom: 0;
+    color: #9f9083;
+    font-size: 42px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.core-strengths-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 24px 14px;
+    align-items: start;
+}
+
+.core-strengths-grid::before {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: 0;
+    right: 0;
+    height: 28px;
+    background: rgba(232, 223, 212, 0.66);
+}
+
+.core-strength-card {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.core-strength-icon {
+    width: 106px;
+    height: 106px;
+    margin: 0 auto 18px;
+    border: 1px dashed rgba(173, 155, 136, 0.55);
+    border-radius: 50%;
+    background: #f7f2eb;
+    box-shadow: 0 8px 18px rgba(139, 116, 91, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ad9c8e;
+    font-size: 44px;
+}
+
+.core-strength-icon img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.core-strength-card p {
+    margin: 0;
+    color: #2f2b28;
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+@media screen and (max-width: 1199px) {
+    .core-strengths-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 28px 18px;
+    }
+
+    .core-strengths-grid::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .core-strengths-section {
+        padding: 64px 0 36px;
+    }
+
+    .core-strengths-head {
+        margin-bottom: 26px;
+    }
+
+    .core-strengths-head h2 {
+        font-size: 30px;
+        line-height: 1.1;
+    }
+
+    .core-strengths-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px 16px;
+    }
+
+    .core-strength-icon {
+        width: 92px;
+        height: 92px;
+        margin-bottom: 14px;
+        font-size: 38px;
+    }
+
+    .core-strength-icon img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .core-strength-card p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .core-strengths-grid {
+        grid-template-columns: 1fr;
+    }
+}
