@@ -182,7 +182,6 @@ p {
     color: var(--color-text-primary);
     margin-bottom: 20px;
     letter-spacing: 1px;
-    text-align: justify;
 }
 
 h1,
