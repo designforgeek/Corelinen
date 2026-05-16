@@ -983,6 +983,10 @@ blockquote cite:before {
     padding: 50px 0;
 }
 
+.rooms1{
+    padding: 50px 0;
+}
+
 .section-padding2 {
     padding: 0 0 120px 0;
 }
@@ -1016,7 +1020,7 @@ blockquote cite:before {
     color: var(--color-heading);
     position: relative;
     margin-bottom: 20px;
-    line-height: 1.25em;
+    /* line-height: 1.25em; */
 }
 
 .section-title span {
@@ -7707,7 +7711,7 @@ input[type="submit"],
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .product-feature-card {
@@ -8340,6 +8344,17 @@ input[type="submit"],
     background: #fbf7f0;
 }
 
+.customise-strip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 4px;
+    padding: 9px;
+    border: 1px dashed rgba(169, 140, 94, 0.65);
+    background: #fbf7f0;
+}
+
 .oeko-strip-badge {
     flex: 0 0 auto;
     justify-items: center;
@@ -8360,6 +8375,15 @@ input[type="submit"],
 .oeko-strip-text {
     margin: 0;
     color: var(--color-text-primary);
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.35;
+}
+
+.customise-strip-text{
+margin: 0;
+    color: var(--color-accent);
     font-family: var(--font-display);
     font-size: 17px;
     font-weight: 500;
@@ -8813,11 +8837,22 @@ input[type="submit"],
         padding: 5px;
     }
 
+    .customise-strip {
+        flex-direction: row;
+        gap: 2px;
+        align-items: center;
+        padding: 8px;
+    }
+
     .oeko-strip-badge img {
         width: 30px;
     }
 
     .oeko-strip-text {
+        font-size: 8px;
+    }
+
+    .customise-strip-text{
         font-size: 8px;
     }
 
@@ -9335,4 +9370,8 @@ input[type="submit"],
     .core-strengths-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.rooms1 {
+    padding: 100px 0px;
 }
