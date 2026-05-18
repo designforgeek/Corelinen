@@ -1729,7 +1729,9 @@ hr {
 
     .section-title {
         font-size: 20px;
+        margin-bottom: 10px;
     }
+
 }
 
 /* owl-dots for slider */
@@ -8741,6 +8743,7 @@ input[type="submit"],
     .filled-showcase {
         grid-template-columns: 1fr;
         gap: 20px;
+        margin-top: 20px;
     }
 
     .filled-showcase-card-cloud,
