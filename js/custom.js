@@ -61,10 +61,34 @@ $(function () {
     }).trigger("scroll");
 
 
-    // Close navbar-collapse when a  clicked
-    $(".navbar-nav .dropdown-item a").on('click', function () {
+    // Close the mobile menu after choosing a dropdown item.
+    $(".navbar-nav .dropdown-item").on('click', function () {
         $(".navbar-collapse").removeClass("show");
     });
+
+    // Keep desktop dropdown parents clickable while preserving mobile tap-to-open behavior.
+    var productDropdownLinks = $(".navbar .nav-item.dropdown > .nav-link.dropdown-toggle[href]");
+
+    function syncNavbarDropdownBehavior() {
+        var isDesktop = window.matchMedia("(min-width: 992px)").matches;
+
+        productDropdownLinks.each(function () {
+            var $link = $(this);
+            var $dropdown = $link.next(".dropdown-menu");
+
+            if (isDesktop) {
+                $link.removeAttr("data-bs-toggle");
+                $link.removeAttr("data-bs-auto-close");
+                $link.attr("aria-expanded", "false");
+                $dropdown.removeClass("show");
+            } else {
+                $link.attr("data-bs-toggle", "dropdown");
+            }
+        });
+    }
+
+    syncNavbarDropdownBehavior();
+    $(window).on("resize", syncNavbarDropdownBehavior);
 
 
     // Sections background image from data background
