@@ -24,7 +24,26 @@
       background: #fff;
       border: 1px solid var(--color-border-soft);
       padding: 34px 30px;
+    }
+
+    .legal-section-grid .legal-card {
       height: 100%;
+    }
+
+    .legal-intro-card {
+      margin-bottom: 30px;
+    }
+
+    .legal-toc-sticky {
+      position: sticky;
+      top: 120px;
+    }
+
+    @media (max-width: 991.98px) {
+      .legal-toc-sticky {
+        position: static;
+        top: auto;
+      }
     }
 
     .legal-card h3,
@@ -151,38 +170,15 @@
   <section class="section-padding bg-cream">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mb-30">
-          <div class="legal-card">
+        <div class="col-lg-8">
+          <div class="legal-card legal-intro-card">
             <div class="section-subtitle">Agreement</div>
             <div class="section-title" style="line-height: 2.5rem;">Welcome to CORE Hospitality Linen™</div>
             <p>CORE Hospitality Linen™ is operated by Innovative Hospitality Solutions LLP. By accessing or using this
               website, you agree to comply with and be bound by the following Terms &amp; Conditions. Please read them
               carefully before using our website or engaging with our services.</p>
           </div>
-        </div>
-        <div class="col-lg-4 mb-30">
-          <div class="legal-card legal-toc">
-            <h3>On This Page</h3>
-            <a href="#website-usage">1. Website Usage</a>
-            <a href="#product-information">2. Product Information</a>
-            <a href="#quotations-pricing">3. Quotations & Pricing</a>
-            <a href="#orders-production">4. Orders & Production</a>
-            <a href="#intellectual-property">5. Intellectual Property</a>
-            <a href="#limitation-liability">6. Limitation of Liability</a>
-            <a href="#force-majeure">7. Force Majeure</a>
-            <a href="#third-party-links">8. Third-Party Links</a>
-            <a href="#changes-terms">9. Changes to Terms</a>
-            <a href="#governing-law">10. Governing Law</a>
-            <a href="#contact-information">11. Contact Information</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding">
-    <div class="container">
-      <div class="row">
+          <div class="row legal-section-grid">
         <div class="col-lg-6 mb-30" id="website-usage">
           <div class="legal-card">
             <h3>1. Website Usage</h3>
@@ -293,6 +289,24 @@
               <li><strong>Email:</strong> <a href="mailto:info@corelinen.com">info@corelinen.com</a></li>
               <li><strong>Website:</strong> <a href="https://corelinen.com">https://corelinen.com</a></li>
             </ul>
+          </div>
+        </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-30">
+          <div class="legal-card legal-toc legal-toc-sticky">
+            <h3>On This Page</h3>
+            <a href="#website-usage">1. Website Usage</a>
+            <a href="#product-information">2. Product Information</a>
+            <a href="#quotations-pricing">3. Quotations & Pricing</a>
+            <a href="#orders-production">4. Orders & Production</a>
+            <a href="#intellectual-property">5. Intellectual Property</a>
+            <a href="#limitation-liability">6. Limitation of Liability</a>
+            <a href="#force-majeure">7. Force Majeure</a>
+            <a href="#third-party-links">8. Third-Party Links</a>
+            <a href="#changes-terms">9. Changes to Terms</a>
+            <a href="#governing-law">10. Governing Law</a>
+            <a href="#contact-information">11. Contact Information</a>
           </div>
         </div>
       </div>
