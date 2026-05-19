@@ -24,7 +24,26 @@
       background: #fff;
       border: 1px solid var(--color-border-soft);
       padding: 34px 30px;
+    }
+
+    .legal-section-grid .legal-card {
       height: 100%;
+    }
+
+    .legal-intro-card {
+      margin-bottom: 30px;
+    }
+
+    .legal-toc-sticky {
+      position: sticky;
+      top: 120px;
+    }
+
+    @media (max-width: 991.98px) {
+      .legal-toc-sticky {
+        position: static;
+        top: auto;
+      }
     }
 
     .legal-card h3,
@@ -151,8 +170,8 @@
   <section class="section-padding bg-cream">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mb-30">
-          <div class="legal-card">
+        <div class="col-lg-8">
+          <div class="legal-card legal-intro-card">
             <div class="section-subtitle">Overview</div>
             <div class="section-title" style="line-height: 2.5rem;">How CORE Hospitality Linen™ manages your data</div>
             <p>CORE Hospitality Linen™ is operated by Innovative Hospitality Solutions LLP. We value the trust of our
@@ -160,31 +179,7 @@
               protect information shared with us through our website and business interactions.</p>
             <p>By using our website, you agree to the practices outlined below.</p>
           </div>
-        </div>
-        <div class="col-lg-4 mb-30">
-          <div class="legal-card legal-toc">
-            <h3>On This Page</h3>
-            <a href="#information-we-collect">1. Information We Collect</a>
-            <a href="#how-we-use-information">2. How We Use Your Information</a>
-            <a href="#cookies-and-analytics">3. Cookies & Analytics</a>
-            <a href="#information-sharing">4. Information Sharing</a>
-            <a href="#data-security">5. Data Security</a>
-            <a href="#data-retention">6. Data Retention</a>
-            <a href="#third-party-links">7. Third-Party Links</a>
-            <a href="#your-rights">8. Your Rights</a>
-            <a href="#consent">9. Consent</a>
-            <a href="#policy-updates">10. Policy Updates</a>
-            <a href="#governing-law">11. Governing Law</a>
-            <a href="#contact-us">12. Contact Us</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding">
-    <div class="container">
-      <div class="row">
+          <div class="row legal-section-grid">
         <div class="col-lg-6 mb-30" id="information-we-collect">
           <div class="legal-card">
             <h3>1. Information We Collect</h3>
@@ -307,6 +302,25 @@
               <li><strong>Email:</strong> <a href="mailto:info@corelinen.com">info@corelinen.com</a></li>
               <li><strong>Website:</strong> <a href="https://corelinen.com">corelinen.com</a></li>
             </ul>
+          </div>
+        </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-30">
+          <div class="legal-card legal-toc legal-toc-sticky">
+            <h3>On This Page</h3>
+            <a href="#information-we-collect">1. Information We Collect</a>
+            <a href="#how-we-use-information">2. How We Use Your Information</a>
+            <a href="#cookies-and-analytics">3. Cookies & Analytics</a>
+            <a href="#information-sharing">4. Information Sharing</a>
+            <a href="#data-security">5. Data Security</a>
+            <a href="#data-retention">6. Data Retention</a>
+            <a href="#third-party-links">7. Third-Party Links</a>
+            <a href="#your-rights">8. Your Rights</a>
+            <a href="#consent">9. Consent</a>
+            <a href="#policy-updates">10. Policy Updates</a>
+            <a href="#governing-law">11. Governing Law</a>
+            <a href="#contact-us">12. Contact Us</a>
           </div>
         </div>
       </div>
